@@ -1,0 +1,20 @@
+package com.example.test.testCalculator;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import com.example.test.Calculator.Calculator;
+
+public class TestCalculator {
+
+	@Test
+	public void testSum() {
+		Calculator calc = new Calculator();
+		Integer actualResult =calc.sum(20, 20);
+		Integer expectedResult=400;
+		
+		assertEquals(expectedResult, actualResult);
+		
+	}
+}
