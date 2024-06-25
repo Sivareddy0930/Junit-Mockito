@@ -1,0 +1,16 @@
+package com.example.test;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
+
+public class ConvertStringToIntTest {
+	
+	@Test
+	public void TestConvertStringToInt() {
+		
+//		assertThrows(IllegalArgumentException.class, ()->StringToInt.convertStringToInt(""));
+		assertThrows(IllegalArgumentException.class, ()->StringToInt.convertStringToInt("123456"));
+	}
+
+}

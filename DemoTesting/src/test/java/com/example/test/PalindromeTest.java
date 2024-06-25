@@ -1,0 +1,19 @@
+package com.example.test;
+
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+public class PalindromeTest {
+	
+	@ParameterizedTest
+	@ValueSource(strings = {"Siva","okay","good","fiif"})
+	public void isPalindromeTest(String s) {
+		Palindrome pd = new Palindrome();
+		boolean b =pd.isPalindrome(s);
+		assertTrue(b);
+	}
+
+}
